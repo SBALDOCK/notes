@@ -8,6 +8,9 @@
 ### Execution
 
 ### Testing
+* Several NPM tests exist to test the functionality of this application. 
+* First tests confirm the testing structure itself is functional
+* Additional tests check for successful input as outlined by the project requirements
 
 ### Technologies
 * Node.js
