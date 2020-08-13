@@ -1,21 +1,41 @@
-# notes
+# Notesy
 
+* Created by Steve Baldock
 
-### Notesy is a terminal based (CLI) application allowing users to easily create and manage a list of categorized notes
+## Description
 
-### Setup
+* Notesy is a terminal based (CLI) application allowing users to 
+  easily create and manage a list of categorized notes. Users can
+  add notes, categorize notes, search for notes, and delete notes
+  from MongoDB database.
 
-### Execution
+## Installation
 
-### Testing
-* Several NPM tests exist to test the functionality of this application. 
-* First tests confirm the testing structure itself is functional
-* Additional tests check for successful input as outlined by the project requirements
+## Setup
+* npm init -y
+* npm install minimist
+* npm install jest
+* npm install is-url
+* npm install mongoose
+* npm install @code-fellows/supergoose
 
-### Technologies
+## Running the App
+* node . 
+
+## Execution
+
+## Testing
+* npm test input.js
+* npm test notes.js
+
+## Technologies
 * Node.js
 * JavaScript
+* MongoDB
 
-### Dependencies
+## Dependencies
 * minimist
+* jest
 * is-url
+* mongoose
+
