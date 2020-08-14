@@ -20,7 +20,7 @@
 * npm install @code-fellows/supergoose
 
 ## Running the App
-* node . 
+* node/npm index.js <action> <message>
 
 ## Execution
 
