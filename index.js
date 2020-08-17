@@ -18,9 +18,21 @@ const notes = new Notes(input);
 
 if (input.valid()) {
   notes.execute(input.command)
+    .then(result => {
+      if (input.command == 'List') {
+        const notes = result;
+        notes.forEach(note => {
+          console.log(note.text);
+          console.log('');
+          console.log(` Category: ${note.category}\t`);
+          console.log('--------------------------------\n');
+        });
+      }
+    })
     .then(mongoose.disconnect)
     .catch(error => console.error(error));
-} else {
+} 
+else {
   help();
 }
 

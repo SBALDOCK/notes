@@ -83,6 +83,16 @@ describe('Validate', () => {
     options.command = { action: 'add', payload: undefined }; //break it
     expect(options.valid()).toBe(false);
   });
+  it('valid() handles list', () => {
+    let options = new Input();
+    options.command = {
+      action: 'list',
+      payload: undefined,
+      category: undefined,
+    };
+    expect(options.valid() == true);
+    
+  });
 
 });
 
@@ -139,18 +149,3 @@ describe('category', () => {
 
 });
 
-// test('tests are alive', () => {
-//   expect(true).toBe(true);
-// });
-
-// test('parse should give us good command', () => {
-//   let input = new Input();
-//   let command = input.parse({ a: 'test' });
-//   expect(command.action).toBe('add');
-// });
-
-//or
-
-// it ('should do something', () => {
-//   expect(false).toBe(true);
-// });
