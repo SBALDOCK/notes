@@ -9,8 +9,6 @@
   add notes, categorize notes, search for notes, and delete notes
   from MongoDB database.
 
-## Installation
-
 ## Setup
 * npm init -y
 * npm install minimist
